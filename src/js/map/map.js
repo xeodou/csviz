@@ -8,6 +8,8 @@ var concat = require('concat-stream')
 var Buffer = require('buffer').Buffer
 var mapbox = require('mapbox.js')
 
+require('../../../node_modules/mapbox.js/theme/style.css')
+
 // configs
 var config = require('../../../config.json');
 var csv = config.csv;

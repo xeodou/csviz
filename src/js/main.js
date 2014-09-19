@@ -8,6 +8,8 @@ var auth = require('./routes/auth.js');
 var user = require('./models/user');
 var xhr = require('xhr');
 
+require('../scss/main.scss');
+
 var config = require('../../config.json');
 var META = config.meta;
 var TOKEN_URL = config.token_url;

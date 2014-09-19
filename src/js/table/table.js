@@ -11,6 +11,8 @@ var helper = require('./handsontable.csv.js')
 var Github = require('github-api')
 var user = require('../models/user')
 
+require('../../libs/jquery.handsontable.css')
+
 var config = require('../../../config.json');
 var csv = config.csv;
 var csv_path = config.git.csv_path;

@@ -12,9 +12,7 @@ var gutil = require('gulp-util');
 var eggshell = require('eggshell').includePaths;
 
 var css = [
-  './src/scss/main.scss',
-  './node_modules/mapbox.js/theme/style.css',
-  './src/libs/jquery.handsontable.css'
+  './src/scss/main.scss'
 ]
 
 var libs = [
