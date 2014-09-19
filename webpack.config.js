@@ -1,3 +1,5 @@
+var bourbon = require('node-bourbon').includePaths;
+
 module.exports = {
   entry: './src/js/main.js',
   output: {
@@ -9,9 +11,7 @@ module.exports = {
       { test: /\.json$/, loader: 'json' },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.png/, loader: 'url-loader?limit=100000&mimetype=image/png' },
-      { test: /\.scss$/, loader: "style!css!sass?includePaths[]=" +
-        (require('path').resolve(__dirname, './node_modules/eggshell'))
-      },
+      { test: /\.scss$/, loader: "style!css!sass?includePaths[]=" + bourbon},
       { test: /\.js$/, loader: "jsx-loader" }
     ]
   },
